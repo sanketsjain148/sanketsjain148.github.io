@@ -1,17 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sanket Jain - DevOps Engineer</title>
-</head>
-<body style="font-family: Arial; text-align: center; margin-top: 100px;">
-    <h1>Sanket Jain</h1>
-    <h2>DevOps Engineer</h2>
-    <p>8+ years experience in AWS, Kubernetes, CI/CD</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanket Jain | DevOps Engineer</title>
 
-    <a href="Sanket_Resume.pdf" target="_blank">
-        <button style="padding: 10px 20px; font-size: 16px;">
-            View My Resume
-        </button>
-    </a>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  color: var(--muted);
+  margin-bottom: 15px;
+}
+
+/* LINKS */
+.links a {
+  margin: 0 10px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--accent);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: #0d1117;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* CARDS */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero">
+
+  <img src="profile.jpeg" alt="Sanket Jain" class="profile">
+
+  <h1>Sanket Jain</h1>
+
+  <p class="tagline">
+    DevOps Engineer focused on cloud infrastructure, automation, and reliability.
+  </p>
+
+  <div class="links">
+    <a href="mailto:sanketjn210@gmail.com">Email</a>
+    <a href="https://linkedin.com/in/sanket-jain-aa5831115" target="_blank">LinkedIn</a>
+    <a href="https://github.com/sanketsjain148" target="_blank">GitHub</a>
+  </div>
+
+  <a href="Sanket_Resume.pdf" target="_blank" class="btn">View Resume</a>
+
+</div>
+
+<!-- ABOUT -->
+<div class="card">
+  <h2>About</h2>
+  <p>
+    DevOps Engineer with 8+ years of experience building scalable cloud platforms,
+    automating deployments, and improving system reliability. Experienced in AWS,
+    Kubernetes, and Infrastructure as Code.
+  </p>
+</div>
+
+<!-- SKILLS -->
+<div class="grid grid-2">
+
+<div class="card">
+  <h2>Core Skills</h2>
+  <ul>
+    <li>AWS, Pivotal Cloud Foundry</li>
+    <li>Kubernetes, Docker</li>
+    <li>Terraform (Infrastructure as Code)</li>
+    <li>CI/CD (Jenkins, CloudBees)</li>
+    <li>Monitoring (ELK Stack, Graylog)</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>Certifications</h2>
+  <ul>
+    <li>AWS Solutions Architect – Associate</li>
+    <li>AWS Developer – Associate</li>
+    <li>Kubernetes & Cloud Native Associate</li>
+    <li>JNCIA – Juniper Networks</li>
+  </ul>
+</div>
+
+</div>
+
+<!-- PROJECTS -->
+<div class="card">
+  <h2>Projects</h2>
+  <ul>
+    <li><b>CI/CD Pipeline:</b> Automated build, test, and deployment workflows</li>
+    <li><b>Kubernetes Platform:</b> Container orchestration for scalable applications</li>
+    <li><b>Serverless Hosting:</b> AWS S3-based static website with minimal infrastructure</li>
+  </ul>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="card">
+  <h2>Experience</h2>
+  <p><b>Accenture</b> — DevOps Engineer (2017 – Present)</p>
+  <ul>
+    <li>Designed and implemented CI/CD pipelines</li>
+    <li>Provisioned infrastructure using Terraform</li>
+    <li>Deployed applications using Docker & Kubernetes</li>
+    <li>Improved monitoring and reduced incident resolution time</li>
+  </ul>
+</div>
+
+</div>
+
 </body>
 </html>
