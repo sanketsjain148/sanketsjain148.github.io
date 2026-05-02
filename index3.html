@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanket Jain | DevOps Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:#0b0f19;
+  --card:#111827;
+  --text:#e5e7eb;
+  --accent:#22c55e;
+}
+
+.light {
+  --bg:#f9fafb;
+  --card:#ffffff;
+  --text:#111827;
+}
+
+body {
+  margin:0;
+  font-family: 'Inter', sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.container {
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+header {
+  text-align:center;
+  padding:80px 20px;
+}
+
+h1 { font-size:42px; }
+h2 { color:var(--accent); margin-bottom:10px; }
+
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 24px;
+  background:var(--accent);
+  color:black;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.card {
+  background:var(--card);
+  padding:24px;
+  border-radius:14px;
+  margin-bottom:20px;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.grid {
+  display:grid;
+  gap:20px;
+}
+
+@media(min-width:768px){
+  .grid-2 { grid-template-columns:1fr 1fr; }
+}
+
+.toggle {
+  position:fixed;
+  top:20px;
+  right:20px;
+  cursor:pointer;
+}
+
+.metric {
+  font-size:28px;
+  font-weight:700;
+  color:var(--accent);
+}
+</style>
+</head>
+
+<body>
+
+<div class="toggle" onclick="toggleTheme()">🌗</div>
+
+<header>
+  <h1>Sanket Jain</h1>
+  <p>Senior DevOps Engineer • AWS • Kubernetes • Terraform</p>
+  <p>Building scalable, automated, and reliable cloud systems</p>
+
+  <a href="Sanket_Resume.pdf" class="btn" target="_blank">Download Resume</a>
+
+  <p>
+    <a href="https://linkedin.com/in/sanket-jain-aa5831115">LinkedIn</a> |
+    <a href="https://github.com/sanketsjain148">GitHub</a>
+  </p>
+</header>
+
+<div class="container">
+
+<!-- IMPACT SECTION -->
+<div class="card">
+  <h2>Impact</h2>
+  <div class="grid grid-2">
+    <div>
+      <div class="metric">↓ 60%</div>
+      <p>Deployment time reduced via CI/CD automation</p>
+    </div>
+    <div>
+      <div class="metric">↑ Reliability</div>
+      <p>Improved system uptime with monitoring & alerting</p>
+    </div>
+    <div>
+      <div class="metric">IaC</div>
+      <p>Fully automated infrastructure using Terraform</p>
+    </div>
+    <div>
+      <div class="metric">0 Servers</div>
+      <p>Serverless hosting using AWS S3 & CloudFront</p>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="card">
+  <h2>Selected Projects</h2>
+
+  <h3>CI/CD Platform</h3>
+  <p>
+    Designed and implemented a full CI/CD pipeline using Jenkins, SonarQube, and security scans.
+    Automated build, test, and deployment workflows.
+  </p>
+
+  <h3>Kubernetes Platform</h3>
+  <p>
+    Built scalable container orchestration using Docker & Kubernetes.
+    Improved resource utilization and system resilience.
+  </p>
+
+  <h3>Serverless Web Hosting</h3>
+  <p>
+    Designed serverless architecture using AWS S3, CloudFront, and Route53.
+    Eliminated infrastructure overhead and reduced cost.
+  </p>
+
+</div>
+
+<!-- SKILLS -->
+<div class="card">
+  <h2>Core Skills</h2>
+  <div class="grid grid-2">
+    <ul>
+      <li>AWS, PCF</li>
+      <li>Kubernetes, Docker</li>
+      <li>Terraform (IaC)</li>
+    </ul>
+    <ul>
+      <li>CI/CD (Jenkins)</li>
+      <li>Monitoring (ELK)</li>
+      <li>Security (Snyk, SonarQube)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="card">
+  <h2>Experience</h2>
+  <p><b>Accenture</b> — DevOps Engineer (2017–Present)</p>
+  <ul>
+    <li>Built scalable CI/CD pipelines</li>
+    <li>Led AWS cloud migration initiatives</li>
+    <li>Implemented Terraform-based infrastructure</li>
+    <li>Reduced incident resolution time via monitoring</li>
+  </ul>
+</div>
+
+<!-- CERTIFICATIONS -->
+<div class="card">
+  <h2>Certifications</h2>
+  <ul>
+    <li>AWS Solutions Architect – Associate</li>
+    <li>AWS Developer – Associate</li>
+    <li>Kubernetes & Cloud Native Associate</li>
+  </ul>
+</div>
+
+</div>
+
+<script>
+function toggleTheme(){
+  document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
