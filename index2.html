@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanket Jain | DevOps Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --accent: #38bdf8;
+}
+
+.light {
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+h1 { font-size: 42px; }
+h2 { color: var(--accent); }
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: var(--accent);
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+@media(min-width:768px){
+    .grid-2 { grid-template-columns: 1fr 1fr; }
+}
+
+/* Toggle */
+.toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: var(--card);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Badge */
+.badge {
+    margin-top: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="toggle" onclick="toggleTheme()">🌙</div>
+
+<header>
+    <h1>Sanket Jain</h1>
+    <p>DevOps Engineer | AWS | Kubernetes | CI/CD</p>
+
+    <a href="Sanket_Resume.pdf" class="btn" target="_blank">View Resume</a>
+
+    <div class="badge">
+        <img src="https://github.com/sanketsjain148/sanketsjain148.github.io/actions/workflows/pages/pages-build-deployment/badge.svg">
+    </div>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>About Me</h2>
+<p>DevOps Engineer with 8+ years experience in cloud, automation, and scalable systems.</p>
+</div>
+
+<div class="grid grid-2">
+
+<div class="card">
+<h2>Skills</h2>
+<ul>
+<li>AWS, Terraform</li>
+<li>Kubernetes, Docker</li>
+<li>CI/CD (Jenkins)</li>
+<li>Monitoring (ELK)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Certifications</h2>
+<ul>
+<li>AWS Solutions Architect</li>
+<li>Kubernetes Associate</li>
+<li>AWS Developer</li>
+</ul>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Projects</h2>
+<ul>
+<li><b>CI/CD Pipeline:</b> Automated build, test & deployment using Jenkins</li>
+<li><b>Kubernetes Deployment:</b> Scalable container orchestration setup</li>
+<li><b>Serverless Hosting:</b> AWS S3 static website with zero server management</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Experience</h2>
+<p><b>Accenture</b> | DevOps Engineer (2017 - Present)</p>
+<ul>
+<li>Built CI/CD pipelines</li>
+<li>Terraform infrastructure provisioning</li>
+<li>Docker + Kubernetes deployments</li>
+<li>Monitoring & incident reduction</li>
+</ul>
+</div>
+
+</div>
+
+<script>
+// Theme toggle
+function toggleTheme() {
+    document.body.classList.toggle("light");
+}
+
+// Scroll animation
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if(top < window.innerHeight - 50){
+            card.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
